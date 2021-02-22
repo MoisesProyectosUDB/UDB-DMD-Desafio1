@@ -7,7 +7,10 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Ejercicio1", "Desafio1\Ejer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{71322CEB-5436-44F5-8C46-DFDE797669CC}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaCentro_m20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaCentro_m20191007.csv
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\spaDiego_CreateBase.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\spaDiego_CreateBase.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaEscalon_i20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaEscalon_i20191007.csv
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaSantaTecla_m20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaSantaTecla_m20191007.csv
 	EndProjectSection
 EndProject
 Global
