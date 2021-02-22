@@ -1,0 +1,955 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/20/2021 9:22:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DMDUDB"
+  DTS:CreatorName="DMDUDB\moise"
+  DTS:DTSID="{FBDE77E5-8B6F-4545-8CC3-CA2995B6217A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LocaleID="21514"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{DDD53A49-6538-4012-B211-3688E10E4DAB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D1639678-C9D7-42CF-9663-6127DE040EAD}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::archivosDatos]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="21514"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{122AF4D3-141E-4BA5-AF63-356C13E11CAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{40D27C38-E1E7-4E65-B63E-1FA88EFF1CC3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ingresos"
+              DTS:DTSID="{2FE8C169-1275-43B7-959A-387958882037}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PromVisit"
+              DTS:DTSID="{D767C61F-E61B-466C-A8F2-69D1568A5631}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Edad"
+              DTS:DTSID="{7D35F608-B811-4D3B-A7F1-688CB8163D02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sauna"
+              DTS:DTSID="{D6EBEF7E-B4D9-4143-82D0-A8F80C277970}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Masaje"
+              DTS:DTSID="{6B3D0441-A743-4EE6-85C5-C893A876C399}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hidro"
+              DTS:DTSID="{796F7D7C-4544-4320-AB31-1BD3AD9C29E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yoga"
+              DTS:DTSID="{DAC952B1-D4A2-4DC2-8F0B-0C25E4B9B598}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sucursal"
+              DTS:DTSID="{CCE73918-64C2-45A9-9DC9-6EFF16367001}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{830ACDCA-12C3-42AD-B7F6-EF128624E199}"
+      DTS:ObjectName="DMDUDB.spaDiego.AdministradorDBA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DMDUDB;User ID=AdministradorDBA;Initial Catalog=spaDiego;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABAdPRyOPjFp1BujbJ0lMOnX89PKemFmtJrdR4kPLk9PQAAAAAOgAAAAAIAACAAAABQE6D9ZRXqURf51hhuhaseybBizNeGVR5pjUgaJDOXdyAAAABuRl0GtnRvy7UpnTXfxcOllKiR5vHu54ryGlwoZkRuIEAAAADcmN2oq5K+qEDbRD82mTennte1a8KqUKkz8ZF+sSEOhC60Y/uBbbsGLf6gezmvwHNnFTKXf5w8J+H77LJMnkUX</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{22A96385-9460-43AD-A4EE-9904FD60CF09}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="archivosDatos">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Contenedor de bucles Foreach"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Contenedor de bucles Foreach"
+      DTS:DTSID="{0221AD6B-DE76-440C-888F-56740F540118}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de bucles Foreach">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{017B9687-C326-437D-8B6A-8F7BC423C539}"
+        DTS:ObjectName="{017B9687-C326-437D-8B6A-8F7BC423C539}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\moise\Documents\UDBIngenieria\Materias\Ciclo 03\DMD\Unidad 2\Desafio1\Recursos\Diego" />
+            <FEFEProperty
+              FileSpec="*csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{00F7DADE-3C63-45F5-8831-5EF005A6BDF4}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Carga de data de Documentos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="21514"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sexo]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sexo]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sexo]"
+                          name="Sexo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[ingresos]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ingresos]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[ingresos]"
+                          name="ingresos"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[PromVisit]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PromVisit]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[PromVisit]"
+                          name="PromVisit"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Edad]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Edad]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Edad]"
+                          name="Edad"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sauna]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sauna]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sauna]"
+                          name="Sauna"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Masaje]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Masaje]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Masaje]"
+                          name="Masaje"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hidro]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hidro]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hidro]"
+                          name="Hidro"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Yoga]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Yoga]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Yoga]"
+                          name="Yoga"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sucursal]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]"
+                          name="Sucursal"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sexo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sexo" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ingresos]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ingresos" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PromVisit]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PromVisit" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Edad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Edad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sauna]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sauna" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Masaje]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Masaje" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hidro]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Hidro" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Yoga]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Yoga" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sucursal]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sucursal" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DestinoDatos]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sexo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Sexo"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sexo]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sexo]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ingresos]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ingresos"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ingresos]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[ingresos]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Edad]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Edad"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Edad]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sauna]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Sauna"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sauna]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sauna]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Masaje]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Masaje"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[masaje]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Masaje]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hidro]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Hidro"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hidro]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hidro]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PromVisit]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PromVisit"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[prodVisitas]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[PromVisit]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Yoga]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Yoga"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[yoga]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Yoga]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sucursal]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Sucursal"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sucursal]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                          dataType="i4"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                          codePage="1252"
+                          dataType="str"
+                          length="60"
+                          name="nombreCliente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sexo]"
+                          dataType="i4"
+                          name="sexo" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ingresos]"
+                          dataType="numeric"
+                          name="ingresos"
+                          precision="12"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[prodVisitas]"
+                          dataType="numeric"
+                          name="prodVisitas"
+                          precision="10"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                          dataType="i4"
+                          name="edad" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sauna]"
+                          dataType="i4"
+                          name="sauna" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[masaje]"
+                          dataType="i4"
+                          name="masaje" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hidro]"
+                          dataType="i4"
+                          name="hidro" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[yoga]"
+                          dataType="i4"
+                          name="yoga" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sucursal]"
+                          dataType="i4"
+                          name="sucursal" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Contenedor de bucles Foreach\Carga de data de Documentos.Paths[Flat File Source Output]"
+                  endId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{19D74226-2DEC-4A2F-B43D-7BBBE7D4D293}"
+          DTS:ObjectName="{19D74226-2DEC-4A2F-B43D-7BBBE7D4D293}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::archivosDatos" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpieza Datos"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{79937A22-34DE-4FBE-9541-2C304125159C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpieza Datos"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{830ACDCA-12C3-42AD-B7F6-EF128624E199}"
+          SQLTask:SqlStatementSource="delete from DestinoDatos;&#xA;delete from ClienteVisitaDetalle;&#xA;delete from ClienteVisitaSucursal;&#xA;delete from DepartamentosSucursal;&#xA;delete from Sucursal;&#xA;delete from Clientes;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{CDA9FF5B-64E7-4630-A0C8-FEDFED324F78}"
+      DTS:From="Package\Limpieza Datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Contenedor de bucles Foreach" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos"
+          TopLeft="38,18" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="303,138"
+          Size="303,181"
+          Id="Package\Contenedor de bucles Foreach"
+          TopLeft="192,125" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Limpieza Datos"
+          TopLeft="560,73" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="560,94">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65,121.5"
+              Start="0,0"
+              End="-57.5,121.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-28.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.5,0"
+                    Point2="-32.5,0"
+                    Point3="-32.5,4" />
+                  <mssgle:LineSegment
+                    End="-32.5,117.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.5,117.5"
+                    Point2="-32.5,121.5"
+                    Point3="-36.5,121.5" />
+                  <mssgle:LineSegment
+                    End="-57.5,121.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Contenedor de bucles Foreach\Carga de data de Documentos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination"
+          TopLeft="383,235" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos\Flat File Source"
+          TopLeft="246,41" />
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos.Paths[Flat File Source Output]"
+          TopLeft="321.5,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="147,152"
+              Start="0,0"
+              End="147,144.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,72"
+                    Point2="0,76"
+                    Point3="4,76" />
+                  <mssgle:LineSegment
+                    End="143,76" />
+                  <mssgle:CubicBezierSegment
+                    Point1="143,76"
+                    Point2="147,76"
+                    Point3="147,80" />
+                  <mssgle:LineSegment
+                    End="147,144.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
