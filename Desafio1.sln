@@ -5,8 +5,10 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Ejercicio1", "Desafio1\Ejercicio1.dtproj", "{6D11C3FD-2D52-4569-81BC-73CB78FD59B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{71322CEB-5436-44F5-8C46-DFDE797669CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursos", "Recursos", "{71322CEB-5436-44F5-8C46-DFDE797669CC}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasGrupos.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasGrupos.sql
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaCentro_m20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaCentro_m20191007.csv
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\spaDiego_CreateBase.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\spaDiego_CreateBase.sql
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaEscalon_i20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaEscalon_i20191007.csv

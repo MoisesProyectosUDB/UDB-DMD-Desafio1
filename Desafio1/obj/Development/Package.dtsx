@@ -11,8 +11,8 @@
   DTS:LocaleID="21514"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{DDD53A49-6538-4012-B211-3688E10E4DAB}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{E24D95BB-A96D-4046-8CF6-DC19E5B3A80E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -138,7 +138,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB9Ae5QMNFGz0/T9K4QmQAkGJjcYtoHPKI/bG9F/MktygAAAAAOgAAAAAIAACAAAACS54RgdN/tCtyiOnQ96cpDFXqGvCXTRSETRMItsHz+PiAAAAD9oQrT97PyLVYszDZWiWP8YhhPQlzcv48GqBLIaY4aoUAAAADcyemFc8hyWgbBZxCrN1ZvFXYmKnQZONkcARaYmsH/FcPRUJA722GFvJzD9jNVIfIa/6d14YXxaDepmE9wUTZM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACuzqIEnrdKrBm3FexQPcZ+sDOkJZn0asYMmZDZxMTx1gAAAAAOgAAAAAIAACAAAACz5im+OxKnZ9Svi1SpjhRzjMKH5tViS2fC+ELDUxXjliAAAAD7nS2MssnnoAaItsiCqMB6Lla1s1/3ipPVPcCt3EkUU0AAAAB1ff0FpnTkg5UjbIDH+1XEhDv8/7f85lYuD6KS46rwLLDCRk3r7H1YtBD+i/ZvpoWaYQXo4q3V/ef2pGCPWHGR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -156,6 +156,674 @@
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Clientes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{612334C3-CD45-4F60-BDED-8721AF82E185}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clientes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Clientes\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Clientes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Clientes\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nombreCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="nombreCliente"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]" />
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sexo]"
+                      cachedDataType="i4"
+                      cachedName="sexo"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sexo]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sexo]" />
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ingresos]"
+                      cachedDataType="numeric"
+                      cachedName="ingresos"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ingresos]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[ingresos]" />
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[edad]"
+                      cachedDataType="i4"
+                      cachedName="edad"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="nombreCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sexo]"
+                      dataType="i4"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ingresos]"
+                      dataType="numeric"
+                      name="ingresos"
+                      precision="12"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                      dataType="i4"
+                      name="edad" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Clientes\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct(nombreCliente),  sexo, ingresos, edad  from DestinoDatos</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Clientes\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombreCliente]"
+                      length="60"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]"
+                      name="nombreCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sexo]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[sexo]"
+                      name="sexo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[ingresos]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ingresos]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[ingresos]"
+                      name="ingresos"
+                      precision="12"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[edad]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]"
+                      name="edad"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="nombreCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
+                      dataType="i4"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ingresos]"
+                      dataType="numeric"
+                      name="ingresos"
+                      precision="12"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[edad]"
+                      dataType="i4"
+                      name="edad" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombreCliente]"
+                      name="nombreCliente" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sexo]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sexo]"
+                      name="sexo" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ingresos]"
+                      dataType="numeric"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ingresos]"
+                      name="ingresos"
+                      precision="12"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[edad]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[edad]"
+                      name="edad" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Clientes.Paths[OLE DB Source Output]"
+              endId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ClienteSucursal"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{13441387-E393-4938-A3B5-C1FDD9115559}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ClienteSucursal"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ClienteSucursal\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ClienteVisitaSucursal]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ClienteSucursal\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDCliente]"
+                      cachedDataType="i4"
+                      cachedName="IDCliente"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]" />
+                    <inputColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDSucursal]"
+                      cachedDataType="i4"
+                      cachedName="IDSucursal"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDSucursal]" />
+                    <inputColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProdVisitas]"
+                      cachedDataType="numeric"
+                      cachedName="ProdVisitas"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
+                      dataType="i4"
+                      name="IDSucursal" />
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
+                      dataType="numeric"
+                      name="ProdVisita"
+                      precision="5"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ClienteSucursal\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ClienteSucursal\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select b.ID as 'IDCliente',c.ID as'IDSucursal',a.prodVisitas as 'ProdVisitas'  from DestinoDatos  a 
+inner join Clientes b on a.nombreCliente=b.nombreCliente
+inner join Sucursal c on a.sucursal=c.ID;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ClienteSucursal\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDCliente]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDCliente]"
+                      name="IDCliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDSucursal]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDSucursal]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDSucursal]"
+                      name="IDSucursal"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProdVisitas]"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]"
+                      name="ProdVisitas"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDSucursal]"
+                      dataType="i4"
+                      name="IDSucursal" />
+                    <externalMetadataColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProdVisitas]"
+                      dataType="numeric"
+                      name="ProdVisitas"
+                      precision="10"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDCliente]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDCliente]"
+                      name="IDCliente" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDSucursal]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDSucursal]"
+                      name="IDSucursal" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProdVisitas]"
+                      dataType="numeric"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProdVisitas]"
+                      name="ProdVisitas"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ClienteSucursal.Paths[OLE DB Source Output]"
+              endId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Contenedor de bucles Foreach"
       DTS:CreationName="STOCK:FOREACHLOOP"
@@ -790,11 +1458,319 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{19D74226-2DEC-4A2F-B43D-7BBBE7D4D293}"
-          DTS:ObjectName="{19D74226-2DEC-4A2F-B43D-7BBBE7D4D293}"
+          DTS:DTSID="{6D73088E-77D2-45BB-98E4-BC55991C4421}"
+          DTS:ObjectName="{6D73088E-77D2-45BB-98E4-BC55991C4421}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::archivosDatos" />
       </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DetalleVisita"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{FE85CAF2-13FB-4B7C-BFB3-F9F3809EF69D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DetalleVisita"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DetalleVisita\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ClienteVisitaDetalle]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DetalleVisita\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDVisita]"
+                      cachedDataType="i4"
+                      cachedName="IDVisita"
+                      externalMetadataColumnId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDVisitaSucursal]"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]" />
+                    <inputColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDDepartamento]"
+                      cachedDataType="i4"
+                      cachedName="IDDepartamento"
+                      externalMetadataColumnId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDDepartamento]"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDepartamento]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDVisitaSucursal]"
+                      dataType="i4"
+                      name="IDVisitaSucursal" />
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDDepartamento]"
+                      dataType="i4"
+                      name="IDDepartamento" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DetalleVisita\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DetalleVisita\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select  IDVisita, case when NameDapartamento='sauna' then 1  
+					   when NameDapartamento='masaje' then 2
+					   when NameDapartamento='hidro' then 3
+					   when NameDapartamento='yoga' then 4
+					   else null
+				  end as 'IDDepartamento'
+				  ,departamentoVisita from (select d.ID as 'IDVisita',a.sauna,a.masaje,a.hidro,a.yoga
+							 from DestinoDatos a inner join Sucursal b on a.sucursal=b.ID
+							 inner join Clientes c on a.nombreCliente=c.nombreCliente
+							 inner join ClienteVisitaSucursal d on d.IDCliente=c.ID and d.IDSucursal=b.ID
+							 ) as V
+	 unpivot ( departamentoVisita FOR [NameDapartamento] IN([sauna],[masaje],[hidro],[yoga])) upvt	 
+	 where departamentoVisita&gt;=1
+	group by  IDVisita,NameDapartamento ,departamentoVisita
+	order by IDVisita  asc</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DetalleVisita\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.spaDiego.AdministradorDBA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[departamentoVisita]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[departamentoVisita]"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[departamentoVisita]"
+                      name="departamentoVisita"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDVisita]"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]"
+                      name="IDVisita"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDepartamento]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDDepartamento]"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDDepartamento]"
+                      name="IDDepartamento"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[departamentoVisita]"
+                      dataType="i4"
+                      name="departamentoVisita" />
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDVisita]"
+                      dataType="i4"
+                      name="IDVisita" />
+                    <externalMetadataColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDDepartamento]"
+                      dataType="i4"
+                      name="IDDepartamento" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDVisita]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDVisita]"
+                      name="IDVisita" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDDepartamento]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDDepartamento]"
+                      name="IDDepartamento" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[departamentoVisita]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[departamentoVisita]"
+                      name="departamentoVisita" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DetalleVisita.Paths[OLE DB Source Output]"
+              endId="Package\DetalleVisita\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DetalleVisita\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Limpieza Datos"
@@ -810,7 +1786,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{830ACDCA-12C3-42AD-B7F6-EF128624E199}"
-          SQLTask:SqlStatementSource="delete from DestinoDatos;&#xA;delete from ClienteVisitaDetalle;&#xA;delete from ClienteVisitaSucursal;&#xA;delete from DepartamentosSucursal;&#xA;delete from Sucursal;&#xA;delete from Clientes;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="delete from DestinoDatos;&#xA;delete from ClienteVisitaDetalle;&#xA;delete from ClienteVisitaSucursal;&#xA;delete from Clientes;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -823,6 +1799,30 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
       DTS:To="Package\Contenedor de bucles Foreach" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1C30492B-38A2-4D43-AA13-B7E9FE793396}"
+      DTS:From="Package\Contenedor de bucles Foreach"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Clientes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{584E3B99-1CD2-4787-B205-9D2B164AB30F}"
+      DTS:From="Package\Clientes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\ClienteSucursal" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{2E79AD81-C4CC-46BC-B993-DCF09F29C5A7}"
+      DTS:From="Package\ClienteSucursal"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\DetalleVisita" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -835,7 +1835,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="222,42"
           Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos"
@@ -846,37 +1846,151 @@
           PanelSize="303,138"
           Size="303,181"
           Id="Package\Contenedor de bucles Foreach"
-          TopLeft="192,125" />
+          TopLeft="88,101" />
         <NodeLayout
-          Size="150,42"
+          Size="150,43"
           Id="Package\Limpieza Datos"
-          TopLeft="560,73" />
+          TopLeft="535,21" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="560,94">
+          TopLeft="610,64">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-65,121.5"
+              EndConnector="-370.5,37"
               Start="0,0"
-              End="-57.5,121.5">
+              End="-370.5,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-28.5,0" />
+                    End="0,14.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-28.5,0"
-                    Point2="-32.5,0"
-                    Point3="-32.5,4" />
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="-4,18.5" />
                   <mssgle:LineSegment
-                    End="-32.5,117.5" />
+                    End="-366.5,18.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-32.5,117.5"
-                    Point2="-32.5,121.5"
-                    Point3="-36.5,121.5" />
+                    Point1="-366.5,18.5"
+                    Point2="-370.5,18.5"
+                    Point3="-370.5,22.5" />
                   <mssgle:LineSegment
-                    End="-57.5,121.5" />
+                    End="-370.5,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="116,42"
+          Id="Package\Clientes"
+          TopLeft="228,385" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="239.5,282">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="46.5,103"
+              Start="0,0"
+              End="46.5,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5"
+                    Point2="0,51.5"
+                    Point3="4,51.5" />
+                  <mssgle:LineSegment
+                    End="42.5,51.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.5,51.5"
+                    Point2="46.5,51.5"
+                    Point3="46.5,55.5" />
+                  <mssgle:LineSegment
+                    End="46.5,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="150,42"
+          Id="Package\ClienteSucursal"
+          TopLeft="395,463" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="286,427">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="184,36"
+              Start="0,0"
+              End="184,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14"
+                    Point2="0,18"
+                    Point3="4,18" />
+                  <mssgle:LineSegment
+                    End="180,18" />
+                  <mssgle:CubicBezierSegment
+                    Point1="180,18"
+                    Point2="184,18"
+                    Point3="184,22" />
+                  <mssgle:LineSegment
+                    End="184,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="137,42"
+          Id="Package\DetalleVisita"
+          TopLeft="546,558" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="470,505">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.5,53"
+              Start="0,0"
+              End="144.5,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="4,26.5" />
+                  <mssgle:LineSegment
+                    End="140.5,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140.5,26.5"
+                    Point2="144.5,26.5"
+                    Point3="144.5,30.5" />
+                  <mssgle:LineSegment
+                    End="144.5,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -892,7 +2006,7 @@
     design-time-name="Package\Contenedor de bucles Foreach\Carga de data de Documentos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination"
@@ -932,7 +2046,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -940,6 +2056,219 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Contenedor de bucles Foreach\Carga de data de Documentos\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Clientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Clientes\OLE DB Source"
+          TopLeft="241,87" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Clientes\OLE DB Destination"
+          TopLeft="387,283" />
+        <EdgeLayout
+          Id="Package\Clientes.Paths[OLE DB Source Output]"
+          TopLeft="316,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="156.5,154"
+              Start="0,0"
+              End="156.5,146.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,73"
+                    Point2="0,77"
+                    Point3="4,77" />
+                  <mssgle:LineSegment
+                    End="152.5,77" />
+                  <mssgle:CubicBezierSegment
+                    Point1="152.5,77"
+                    Point2="156.5,77"
+                    Point3="156.5,81" />
+                  <mssgle:LineSegment
+                    End="156.5,146.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\ClienteSucursal">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\ClienteSucursal\OLE DB Source"
+          TopLeft="224,71" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\ClienteSucursal\OLE DB Destination"
+          TopLeft="504,298" />
+        <EdgeLayout
+          Id="Package\ClienteSucursal.Paths[OLE DB Source Output]"
+          TopLeft="299,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="290.5,185"
+              Start="0,0"
+              End="290.5,177.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.5"
+                    Point2="0,92.5"
+                    Point3="4,92.5" />
+                  <mssgle:LineSegment
+                    End="286.5,92.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="286.5,92.5"
+                    Point2="290.5,92.5"
+                    Point3="290.5,96.5" />
+                  <mssgle:LineSegment
+                    End="290.5,177.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\DetalleVisita">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\DetalleVisita\OLE DB Source"
+          TopLeft="343,130" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\DetalleVisita\OLE DB Destination"
+          TopLeft="588,344" />
+        <EdgeLayout
+          Id="Package\DetalleVisita.Paths[OLE DB Source Output]"
+          TopLeft="418,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="255.5,172"
+              Start="0,0"
+              End="255.5,164.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,82" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,82"
+                    Point2="0,86"
+                    Point3="4,86" />
+                  <mssgle:LineSegment
+                    End="251.5,86" />
+                  <mssgle:CubicBezierSegment
+                    Point1="251.5,86"
+                    Point2="255.5,86"
+                    Point3="255.5,90" />
+                  <mssgle:LineSegment
+                    End="255.5,164.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ClienteSucursal\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ClienteSucursal\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DetalleVisita\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DetalleVisita\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
