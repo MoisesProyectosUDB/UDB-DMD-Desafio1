@@ -11,8 +11,8 @@
   DTS:LocaleID="21514"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{E24D95BB-A96D-4046-8CF6-DC19E5B3A80E}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{56DD5644-CC21-42A5-A2DE-674CA6BF482C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -138,7 +138,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACXQUIFNcKbTfFlZtQYVUjgA+PfzLYrLfbmZaNfHesgBgAAAAAOgAAAAAIAACAAAABFr3kQpQgPW31Olt/WjwKMf1Q1uXy7dYIWW5cR+CGp6CAAAADr+pac2bxHiUGrJL8CKTmH/zTivCWrjviqlAjFhXu1WUAAAAASD2dYjXFyGUIwVIfHUovswysADcGljmcydNQb7a7MaN6tstOGmyKIXrHGvrVwl5MOMbVpmHNz7JCUwhFPR+4+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACpJuby+V2Oed/fUEdD5xI0PjQoTP46H2MmZQ8V7UW0sQAAAAAOgAAAAAIAACAAAACjyH4f+xdbS1RGkoSQAiaeNJtHv0jRHtkvLfpugDnxQSAAAACKuZhdOBcjFx/lRvrm6aPe+6moSvvpRSCJJGD6YYyQfkAAAACW9UB8selEijp1lJDUKz/67jsqaXJck1Cqh3FY0fIxueS2tqRKTWiyvUtJjTDd1IHvZPjC88yaJm/YrbJj+afY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -270,6 +270,14 @@
                       cachedName="edad"
                       externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
                       lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]" />
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[prodVisitas]"
+                      cachedDataType="numeric"
+                      cachedName="prodVisitas"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[prodVisitas]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -297,6 +305,12 @@
                       refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
                       dataType="i4"
                       name="edad" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
+                      dataType="numeric"
+                      name="ProdVisita"
+                      precision="5"
+                      scale="2" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -350,7 +364,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct(nombreCliente),  sexo, ingresos, edad  from DestinoDatos</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct(nombreCliente),  sexo, ingresos, edad, prodVisitas  from DestinoDatos</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -426,6 +440,17 @@
                       lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]"
                       name="edad"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[prodVisitas]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[prodVisitas]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[prodVisitas]"
+                      name="prodVisitas"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -449,6 +474,12 @@
                       refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[edad]"
                       dataType="i4"
                       name="edad" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[prodVisitas]"
+                      dataType="numeric"
+                      name="prodVisitas"
+                      precision="10"
+                      scale="2" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -480,6 +511,13 @@
                       dataType="i4"
                       lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[edad]"
                       name="edad" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[prodVisitas]"
+                      dataType="numeric"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[prodVisitas]"
+                      name="prodVisitas"
+                      precision="10"
+                      scale="2" />
                     <outputColumn
                       refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -606,14 +644,6 @@
                       cachedName="IDSucursal"
                       externalMetadataColumnId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
                       lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDSucursal]" />
-                    <inputColumn
-                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProdVisitas]"
-                      cachedDataType="numeric"
-                      cachedName="ProdVisitas"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
-                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -629,12 +659,6 @@
                       refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
                       dataType="i4"
                       name="IDSucursal" />
-                    <externalMetadataColumn
-                      refId="Package\ClienteSucursal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProdVisita]"
-                      dataType="numeric"
-                      name="ProdVisita"
-                      precision="5"
-                      scale="2" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -688,7 +712,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select b.ID as 'IDCliente',c.ID as'IDSucursal',a.prodVisitas as 'ProdVisitas'  from DestinoDatos  a 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select b.ID as 'IDCliente',c.ID as'IDSucursal'  from DestinoDatos  a 
 inner join Clientes b on a.nombreCliente=b.nombreCliente
 inner join Sucursal c on a.sucursal=c.ID;</property>
                 <property
@@ -744,17 +768,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
                       lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDSucursal]"
                       name="IDSucursal"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProdVisitas]"
-                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProdVisitas]"
-                      name="ProdVisitas"
-                      precision="10"
-                      scale="2"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -766,12 +779,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
                       refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDSucursal]"
                       dataType="i4"
                       name="IDSucursal" />
-                    <externalMetadataColumn
-                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProdVisitas]"
-                      dataType="numeric"
-                      name="ProdVisitas"
-                      precision="10"
-                      scale="2" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -789,13 +796,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
                       dataType="i4"
                       lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDSucursal]"
                       name="IDSucursal" />
-                    <outputColumn
-                      refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProdVisitas]"
-                      dataType="numeric"
-                      lineageId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProdVisitas]"
-                      name="ProdVisitas"
-                      precision="10"
-                      scale="2" />
                     <outputColumn
                       refId="Package\ClienteSucursal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -1837,6 +1837,14 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="116,42"
+          Id="Package\Clientes"
+          TopLeft="228,385" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\ClienteSucursal"
+          TopLeft="395,463" />
+        <NodeLayout
           Size="222,42"
           Id="Package\Contenedor de bucles Foreach\Carga de data de Documentos"
           TopLeft="38,18" />
@@ -1847,6 +1855,10 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
           Size="303,181"
           Id="Package\Contenedor de bucles Foreach"
           TopLeft="88,101" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\DetalleVisita"
+          TopLeft="546,558" />
         <NodeLayout
           Size="150,43"
           Id="Package\Limpieza Datos"
@@ -1885,10 +1897,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Clientes"
-          TopLeft="228,385" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
           TopLeft="239.5,282">
@@ -1923,10 +1931,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150,42"
-          Id="Package\ClienteSucursal"
-          TopLeft="395,463" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="286,427">
@@ -1961,10 +1965,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="137,42"
-          Id="Package\DetalleVisita"
-          TopLeft="546,558" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
           TopLeft="470,505">
@@ -2002,6 +2002,148 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Clientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Clientes\OLE DB Destination"
+          TopLeft="387,283" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Clientes\OLE DB Source"
+          TopLeft="241,87" />
+        <EdgeLayout
+          Id="Package\Clientes.Paths[OLE DB Source Output]"
+          TopLeft="316,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="156.5,154"
+              Start="0,0"
+              End="156.5,146.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,73"
+                    Point2="0,77"
+                    Point3="4,77" />
+                  <mssgle:LineSegment
+                    End="152.5,77" />
+                  <mssgle:CubicBezierSegment
+                    Point1="152.5,77"
+                    Point2="156.5,77"
+                    Point3="156.5,81" />
+                  <mssgle:LineSegment
+                    End="156.5,146.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\ClienteSucursal">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\ClienteSucursal\OLE DB Source"
+          TopLeft="224,71" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\ClienteSucursal\OLE DB Destination"
+          TopLeft="504,298" />
+        <EdgeLayout
+          Id="Package\ClienteSucursal.Paths[OLE DB Source Output]"
+          TopLeft="299,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="290.5,185"
+              Start="0,0"
+              End="290.5,177.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.5"
+                    Point2="0,92.5"
+                    Point3="4,92.5" />
+                  <mssgle:LineSegment
+                    End="286.5,92.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="286.5,92.5"
+                    Point2="290.5,92.5"
+                    Point3="290.5,96.5" />
+                  <mssgle:LineSegment
+                    End="290.5,177.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ClienteSucursal\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\ClienteSucursal\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Contenedor de bucles Foreach\Carga de data de Documentos">
     <LayoutInfo>
@@ -2068,106 +2210,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Clientes">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Clientes\OLE DB Source"
-          TopLeft="241,87" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Clientes\OLE DB Destination"
-          TopLeft="387,283" />
-        <EdgeLayout
-          Id="Package\Clientes.Paths[OLE DB Source Output]"
-          TopLeft="316,129">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="156.5,154"
-              Start="0,0"
-              End="156.5,146.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,73" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,73"
-                    Point2="0,77"
-                    Point3="4,77" />
-                  <mssgle:LineSegment
-                    End="152.5,77" />
-                  <mssgle:CubicBezierSegment
-                    Point1="152.5,77"
-                    Point2="156.5,77"
-                    Point3="156.5,81" />
-                  <mssgle:LineSegment
-                    End="156.5,146.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\ClienteSucursal">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\ClienteSucursal\OLE DB Source"
-          TopLeft="224,71" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\ClienteSucursal\OLE DB Destination"
-          TopLeft="504,298" />
-        <EdgeLayout
-          Id="Package\ClienteSucursal.Paths[OLE DB Source Output]"
-          TopLeft="299,113">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="290.5,185"
-              Start="0,0"
-              End="290.5,177.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,88.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,88.5"
-                    Point2="0,92.5"
-                    Point3="4,92.5" />
-                  <mssgle:LineSegment
-                    End="286.5,92.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="286.5,92.5"
-                    Point2="290.5,92.5"
-                    Point3="290.5,96.5" />
-                  <mssgle:LineSegment
-                    End="290.5,177.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\DetalleVisita">
     <LayoutInfo>
       <GraphLayout
@@ -2218,36 +2260,7 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Clientes\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Clientes\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ClienteSucursal\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\ClienteSucursal\OLE DB Destination">
+    design-time-name="Package\DetalleVisita\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2264,19 +2277,6 @@ inner join Sucursal c on a.sucursal=c.ID;</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DetalleVisita\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
