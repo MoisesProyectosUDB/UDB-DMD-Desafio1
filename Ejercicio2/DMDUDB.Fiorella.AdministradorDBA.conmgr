@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DMDUDB.Fiorella.AdministradorDBA"
+  DTS:DTSID="{3BC44357-8220-4FD8-9920-AFAB92B9F7DD}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DMDUDB;User ID=AdministradorDBA;Initial Catalog=Fiorella;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAACAAAAAAAQZgAAAAEAACAAAAA4nG6dM/GbVfv9C48ScaDechvYfxpCHiDk7Wg0lB5sZQAAAAAOgAAAAAIAACAAAADoOf6GpYCaFqqJAFfaNXtJseG2p/xYpB+/QJYoin3mWYAAAAC9UzBrN8EVLrRrDrsf2F2N0vbpFl63by5y0wRwbLEzm8g3/uQUBv1q/MmRGCRl11BbKAFVpwLl1ar9Qp42dDZ16xOKXM7OpDa4hrxrnScn28MDagF+SSJszpAmGOxFKOJeQV5KneX4p2tBL2rTtbOKdae0pQV/+dqzAb0AwJ6DbEAAAACqmaLb9xQLuZXWMSfyZAGwNS1iIicgBwcolVyoYm4zaJQiCRxE4dit7qshKUAUtGiBk4x/+j3+U5TBNx5NncDK</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

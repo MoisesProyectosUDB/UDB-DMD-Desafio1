@@ -17,6 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio1", "Ejercicio1", 
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaSantaTecla_m20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Diego\SpaSantaTecla_m20191007.csv
 	EndProjectSection
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Ejercicio2", "Ejercicio2\Ejercicio2.dtproj", "{71323842-3FE3-4FB4-A3F1-B7807AD96981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio2", "Ejercicio2", "{3615D2A6-3FF0-4A9A-B95A-1725C04FA11D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL2.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL2.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Fiorella_CreateBase.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Fiorella_CreateBase.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanMiguel_j20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanMiguel_j20191007.csv
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanSalvador_i20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanSalvador_i20191007.csv
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SantaAna_c20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SantaAna_c20191007.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -24,12 +35,15 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6D11C3FD-2D52-4569-81BC-73CB78FD59B7}.Development|Default.ActiveCfg = Development
 		{6D11C3FD-2D52-4569-81BC-73CB78FD59B7}.Development|Default.Build.0 = Development
+		{71323842-3FE3-4FB4-A3F1-B7807AD96981}.Development|Default.ActiveCfg = Development
+		{71323842-3FE3-4FB4-A3F1-B7807AD96981}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{433B0462-DC15-4EF0-98D5-83B29A15F05E} = {71322CEB-5436-44F5-8C46-DFDE797669CC}
+		{3615D2A6-3FF0-4A9A-B95A-1725C04FA11D} = {71322CEB-5436-44F5-8C46-DFDE797669CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBC4F366-8B5B-4320-8C10-C09D99251EEF}

@@ -1,0 +1,2428 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/24/2021 9:30:21 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DMDUDB"
+  DTS:CreatorName="DMDUDB\moise"
+  DTS:DTSID="{17B406A2-E7C6-46E4-8FF2-2290074B9A03}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LocaleID="21514"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{1D6FDAFD-F5A9-457F-B510-5E916DCDA438}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{62DA2806-B2F3-467E-9E43-C39A39F1BC9B}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::ArchivosRecorrer]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="21514"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{6D462993-AD11-448E-B383-B40A901D89E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rosas"
+              DTS:DTSID="{2BB61584-FA4E-40C0-B7D2-F1408C444A40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Claveles"
+              DTS:DTSID="{38B6366D-D950-4C74-A524-B1093C51DF00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Macetas"
+              DTS:DTSID="{B2AF0703-9608-4B83-B94B-51BFD9F0E1C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tierra"
+              DTS:DTSID="{0336DFBD-B21A-486C-A051-8996B02AC220}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Girasoles"
+              DTS:DTSID="{2B7F83FC-58DB-48BB-8025-889778128BCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hortensia"
+              DTS:DTSID="{7DC177E6-FD70-47DC-8B6C-E0F7E1C1976E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Globos"
+              DTS:DTSID="{D5E8499B-05A7-420E-A96A-5814C08AFD73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tarjetas"
+              DTS:DTSID="{650EF698-5A3F-4073-8F17-8A240764D247}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Orquideas"
+              DTS:DTSID="{855C080B-6706-438C-9C1D-5AADA6F6EC6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Carmensa"
+              DTS:DTSID="{BD3AA8B1-B8CB-40E7-BEA4-CB6185F402D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lirios"
+              DTS:DTSID="{A2D89F4B-A654-4B8E-8620-0AEF79ED8097}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aurora"
+              DTS:DTSID="{98E941FF-4C32-4794-B88C-A76D7BB7BC07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Tulipanes"
+              DTS:DTSID="{62123DFB-AFB3-4F84-A0BC-B5DEA86D4B3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Liston"
+              DTS:DTSID="{33144D69-786E-41F1-AD2C-27422749E46B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sucursal"
+              DTS:DTSID="{97B624F4-0EA0-4C45-A2C4-3164694EF10E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AEE9330C-C04B-4BC9-BBC1-464EB9C7675A}"
+      DTS:ObjectName="DMDUDB.Fiorella.AdministradorDBA 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DMDUDB;User ID=AdministradorDBA;Initial Catalog=Fiorella;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFtTkLAoFO8Ungt8cADU5dOK+kENJClUeiJzPZV1QdqwAAAAAOgAAAAAIAACAAAAC0Gh9zE+V9Zg/2Wklj2PdBWuFdCfCZEHMe4h8gWjhuGyAAAAC1MpyZz8uuVsVFozZOa/gN+m8ry6GFyomY+sjvDOtE0kAAAACuM4KbBx+vBqXv+iCo6+rAIgFcqynf1luKtEV4009YIFPNPv/as9x1KxtAxtqSQkV57oy9ctJjbXykeF1fPmD1</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{49507A47-CA2D-473D-87E4-1C8CDA237CAD}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArchivosRecorrer">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Clientes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{9817B8E7-D8A8-4EBD-A1BE-BAC1A94384C6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clientes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Clientes\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Clientes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Clientes\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nombreCliente]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="nombreCliente"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="nombreCliente" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Clientes\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select  distinct(nombreCliente)from  DestinoDatos</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Clientes\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombreCliente]"
+                      length="60"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombreCliente]"
+                      name="nombreCliente"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="nombreCliente" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombreCliente]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombreCliente]"
+                      name="nombreCliente" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Clientes.Paths[OLE DB Source Output]"
+              endId="Package\Clientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Clientes\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Contenedor de bucles Foreach"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Contenedor de bucles Foreach"
+      DTS:DTSID="{67CFC8C1-E22C-493C-A507-0B0B12A45060}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de bucles Foreach">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{555F5368-E605-4BC8-AB2F-F683858653F8}"
+        DTS:ObjectName="{555F5368-E605-4BC8-AB2F-F683858653F8}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\moise\Documents\UDBIngenieria\Materias\Ciclo 03\DMD\Unidad 2\Desafio1\Recursos\Fiorella" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de bucles Foreach\Carga Documentos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{262C2959-643F-495E-AAC7-374AFD5DE0C8}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Carga Documentos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="21514"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Rosas]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Rosas]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Rosas]"
+                          name="Rosas"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Claveles]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Claveles]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Claveles]"
+                          name="Claveles"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Macetas]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Macetas]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Macetas]"
+                          name="Macetas"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tierra]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tierra]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tierra]"
+                          name="Tierra"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Girasoles]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Girasoles]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Girasoles]"
+                          name="Girasoles"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hortensia]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hortensia]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hortensia]"
+                          name="Hortensia"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Globos]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Globos]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Globos]"
+                          name="Globos"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tarjetas]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tarjetas]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tarjetas]"
+                          name="Tarjetas"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Orquideas]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orquideas]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Orquideas]"
+                          name="Orquideas"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Carmensa]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Carmensa]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Carmensa]"
+                          name="Carmensa"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Lirios]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Lirios]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Lirios]"
+                          name="Lirios"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Aurora]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Aurora]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Aurora]"
+                          name="Aurora"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tulipanes]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tulipanes]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tulipanes]"
+                          name="Tulipanes"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Liston]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Liston]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Liston]"
+                          name="Liston"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sucursal]"
+                          length="50"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]"
+                          name="Sucursal"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Rosas]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Rosas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Claveles]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Claveles" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Macetas]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Macetas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tierra]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Tierra" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Girasoles]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Girasoles" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Hortensia]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Hortensia" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Globos]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Globos" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tarjetas]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Tarjetas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Orquideas]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Orquideas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Carmensa]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Carmensa" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Lirios]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Lirios" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Aurora]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Aurora" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Tulipanes]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Tulipanes" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Liston]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Liston" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sucursal]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sucursal" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DestinoDatos]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rosas]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Rosas"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rosas]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Rosas]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Claveles]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Claveles"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claveles]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Claveles]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Macetas]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Macetas"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Macetas]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Macetas]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tierra]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Tierra"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tierra]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tierra]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Girasoles]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Girasoles"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Girasoles]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Girasoles]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Hortensia]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Hortensia"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hortensia]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Hortensia]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Globos]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Globos"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Globos]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Globos]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tarjetas]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Tarjetas"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tarjetas]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tarjetas]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Orquideas]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Orquideas"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orquideas]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Orquideas]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Carmensa]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Carmensa"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Carmensa]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Carmensa]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Lirios]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Lirios"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lirios]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Lirios]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Aurora]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Aurora"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Aurora]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Aurora]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Tulipanes]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Tulipanes"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tulipanes]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Tulipanes]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Liston]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Liston"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Liston]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Liston]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sucursal]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Sucursal"
+                          externalMetadataColumnId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output].Columns[Sucursal]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                          dataType="i4"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombreCliente]"
+                          codePage="1252"
+                          dataType="str"
+                          length="60"
+                          name="nombreCliente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rosas]"
+                          dataType="i4"
+                          name="Rosas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claveles]"
+                          dataType="numeric"
+                          name="Claveles"
+                          precision="12"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Macetas]"
+                          dataType="numeric"
+                          name="Macetas"
+                          precision="10"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tierra]"
+                          dataType="i4"
+                          name="Tierra" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Girasoles]"
+                          dataType="i4"
+                          name="Girasoles" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hortensia]"
+                          dataType="i4"
+                          name="Hortensia" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Globos]"
+                          dataType="i4"
+                          name="Globos" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tarjetas]"
+                          dataType="i4"
+                          name="Tarjetas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Orquideas]"
+                          dataType="i4"
+                          name="Orquideas" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Carmensa]"
+                          dataType="i4"
+                          name="Carmensa" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lirios]"
+                          dataType="i4"
+                          name="Lirios" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Aurora]"
+                          dataType="i4"
+                          name="Aurora" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tulipanes]"
+                          dataType="i4"
+                          name="Tulipanes" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Liston]"
+                          dataType="i4"
+                          name="Liston" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Departamento]"
+                          dataType="i4"
+                          name="Departamento" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Contenedor de bucles Foreach\Carga Documentos.Paths[Flat File Source Output]"
+                  endId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{1FF6FEC2-B70D-424C-8AEF-C7B7773C38BB}"
+          DTS:ObjectName="{1FF6FEC2-B70D-424C-8AEF-C7B7773C38BB}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::ArchivosRecorrer" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpiar Datos"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{C25CEEEE-811F-4C23-AA58-4B1F62863D4A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpiar Datos"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{AEE9330C-C04B-4BC9-BBC1-464EB9C7675A}"
+          SQLTask:SqlStatementSource="delete from DestinoDatos;&#xA;delete from Clientes;&#xA;delete from PedidoCliente;&#xA;delete from PedidoClienteDetalle;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PedidoCliente"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{28977C5E-30B1-40A4-BF5A-4E1524F80054}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PedidoCliente"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\PedidoCliente\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PedidoCliente]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PedidoCliente\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Departamento]"
+                      cachedDataType="i4"
+                      cachedName="Departamento"
+                      externalMetadataColumnId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[Departamento]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDCliente]"
+                      dataType="i4"
+                      name="IDCliente" />
+                    <externalMetadataColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDSucursal]"
+                      dataType="i4"
+                      name="IDSucursal" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PedidoCliente\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PedidoCliente\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select  b.ID,a.Departamento from DestinoDatos a inner join Clientes b on a.nombreCliente =b.nombreCliente</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PedidoCliente\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[Departamento]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Departamento]"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Departamento]"
+                      dataType="i4"
+                      name="Departamento" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Departamento]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Departamento]"
+                      name="Departamento" />
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\PedidoCliente.Paths[OLE DB Source Output]"
+              endId="Package\PedidoCliente\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\PedidoCliente\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\pedidoDetalle"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{29C50C1A-4060-4CA8-8491-3A9110EDB367}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="pedidoDetalle"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\pedidoDetalle\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PedidoClienteDetalle]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pedidoDetalle\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDVisita]"
+                      cachedDataType="i4"
+                      cachedName="IDVisita"
+                      externalMetadataColumnId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDPedidoCliente]"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]" />
+                    <inputColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IDTipoRosa]"
+                      cachedDataType="i4"
+                      cachedName="IDTipoRosa"
+                      externalMetadataColumnId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDTipoFlores]"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDTipoRosa]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDPedidoCliente]"
+                      dataType="i4"
+                      name="IDPedidoCliente" />
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IDTipoFlores]"
+                      dataType="i4"
+                      name="IDTipoFlores" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\pedidoDetalle\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\pedidoDetalle\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select  IDVisita, case when NameTipoRosa='Rosas' then 1  
+					   when NameTipoRosa='Claveles' then 2
+					   when NameTipoRosa='Macetas' then 3
+					   when NameTipoRosa='Tierra' then 4
+             when NameTipoRosa='Girasoles' then 5
+             when NameTipoRosa='Hortensia' then 6
+             when NameTipoRosa='Globos' then 7
+             when NameTipoRosa='Tarjetas' then 8
+             when NameTipoRosa='Orquideas' then 9
+             when NameTipoRosa='Carmensa' then 10
+             when NameTipoRosa='Lirios' then 11
+             when NameTipoRosa='Aurora' then 12
+             when NameTipoRosa='Tulipanes' then 13
+             when NameTipoRosa='Liston' then 14
+					   else null
+				  end as 'IDTipoRosa'
+				  ,RosaPedido from (select d.ID as 'IDVisita',a.Rosas, a.Claveles, a.Macetas, a.Tierra, a.Girasoles, a.Hortensia, a.Globos, a.Tarjetas, a.Orquideas, a.Carmensa, a.Lirios, a.Aurora, a.Tulipanes, a.Liston
+							 from DestinoDatos a inner join Sucursal b on a.Departamento =b.ID
+							 inner join Clientes c on a.nombreCliente=c.nombreCliente
+							 inner join  dbo.PedidoCliente d ON d.IDCliente = c.ID
+							 ) as V
+	 unpivot ( RosaPedido FOR [NameTipoRosa] IN([Rosas],[Claveles],[Macetas],[Tierra],[Girasoles],[Hortensia],[Globos],[Tarjetas],[Orquideas],[Carmensa],[Lirios],[Aurora],[Tulipanes],[Liston])) upvt	 
+	 where RosaPedido&gt;=1
+	group by  IDVisita,NameTipoRosa ,RosaPedido
+	order by IDVisita  asc</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pedidoDetalle\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DMDUDB.Fiorella.AdministradorDBA 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDVisita]"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDVisita]"
+                      name="IDVisita"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDTipoRosa]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDTipoRosa]"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[IDTipoRosa]"
+                      name="IDTipoRosa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[RosaPedido]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RosaPedido]"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].Columns[RosaPedido]"
+                      name="RosaPedido"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDVisita]"
+                      dataType="i4"
+                      name="IDVisita" />
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IDTipoRosa]"
+                      dataType="i4"
+                      name="IDTipoRosa" />
+                    <externalMetadataColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RosaPedido]"
+                      dataType="i4"
+                      name="RosaPedido" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDVisita]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDVisita]"
+                      name="IDVisita" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDTipoRosa]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IDTipoRosa]"
+                      name="IDTipoRosa" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RosaPedido]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RosaPedido]"
+                      name="RosaPedido" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\pedidoDetalle.Paths[OLE DB Source Output]"
+              endId="Package\pedidoDetalle\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\pedidoDetalle\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{BC287ADE-ACA9-42F7-948A-B45153D4B014}"
+      DTS:From="Package\Limpiar Datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Contenedor de bucles Foreach" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1BFC581E-F450-4933-BD29-C4BF618F715E}"
+      DTS:From="Package\Contenedor de bucles Foreach"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Clientes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{2FBFEA7B-8740-4B36-B5A1-8FBE984F259F}"
+      DTS:From="Package\Clientes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\PedidoCliente" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{B0892904-9150-4524-9AD1-3F2674F5F63B}"
+      DTS:From="Package\PedidoCliente"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\pedidoDetalle" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos"
+          TopLeft="56,10" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="303,103"
+          Size="303,146"
+          Id="Package\Contenedor de bucles Foreach"
+          TopLeft="229,185" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Limpiar Datos"
+          TopLeft="514,69" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="586,111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-205.5,74"
+              Start="0,0"
+              End="-205.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="-4,37" />
+                  <mssgle:LineSegment
+                    End="-201.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-201.5,37"
+                    Point2="-205.5,37"
+                    Point3="-205.5,41" />
+                  <mssgle:LineSegment
+                    End="-205.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="116,42"
+          Id="Package\Clientes"
+          TopLeft="327,418" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="382.75,331">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,87"
+              Start="0,0"
+              End="0,79.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="143,42"
+          Id="Package\PedidoCliente"
+          TopLeft="597,424" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="443,442">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="154,0"
+              Start="0,0"
+              End="146.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="146.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="143,42"
+          Id="Package\pedidoDetalle"
+          TopLeft="614,510" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="668.5,466">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17,44"
+              Start="0,0"
+              End="17,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18"
+                    Point2="0,22"
+                    Point3="4,22" />
+                  <mssgle:LineSegment
+                    End="13,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13,22"
+                    Point2="17,22"
+                    Point3="17,26" />
+                  <mssgle:LineSegment
+                    End="17,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source"
+          TopLeft="274,62" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination"
+          TopLeft="515,294" />
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos.Paths[Flat File Source Output]"
+          TopLeft="349.5,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="251,190"
+              Start="0,0"
+              End="251,182.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91"
+                    Point2="0,95"
+                    Point3="4,95" />
+                  <mssgle:LineSegment
+                    End="247,95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="247,95"
+                    Point2="251,95"
+                    Point3="251,99" />
+                  <mssgle:LineSegment
+                    End="251,182.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Clientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Clientes\OLE DB Source"
+          TopLeft="390,132" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Clientes\OLE DB Destination"
+          TopLeft="565,315" />
+        <EdgeLayout
+          Id="Package\Clientes.Paths[OLE DB Source Output]"
+          TopLeft="465,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.5,141"
+              Start="0,0"
+              End="185.5,133.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.5"
+                    Point2="0,70.5"
+                    Point3="4,70.5" />
+                  <mssgle:LineSegment
+                    End="181.5,70.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.5,70.5"
+                    Point2="185.5,70.5"
+                    Point3="185.5,74.5" />
+                  <mssgle:LineSegment
+                    End="185.5,133.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\PedidoCliente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\PedidoCliente\OLE DB Source"
+          TopLeft="347,120" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\PedidoCliente\OLE DB Destination"
+          TopLeft="425,301" />
+        <EdgeLayout
+          Id="Package\PedidoCliente.Paths[OLE DB Source Output]"
+          TopLeft="422,162">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.5,139"
+              Start="0,0"
+              End="88.5,131.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,65.5"
+                    Point2="0,69.5"
+                    Point3="4,69.5" />
+                  <mssgle:LineSegment
+                    End="84.5,69.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.5,69.5"
+                    Point2="88.5,69.5"
+                    Point3="88.5,73.5" />
+                  <mssgle:LineSegment
+                    End="88.5,131.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PedidoCliente\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PedidoCliente\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\pedidoDetalle">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\pedidoDetalle\OLE DB Source"
+          TopLeft="275,70" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\pedidoDetalle\OLE DB Destination"
+          TopLeft="499,207" />
+        <EdgeLayout
+          Id="Package\pedidoDetalle.Paths[OLE DB Source Output]"
+          TopLeft="350,112">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="234.5,95"
+              Start="0,0"
+              End="234.5,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.5"
+                    Point2="0,47.5"
+                    Point3="4,47.5" />
+                  <mssgle:LineSegment
+                    End="230.5,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="230.5,47.5"
+                    Point2="234.5,47.5"
+                    Point3="234.5,51.5" />
+                  <mssgle:LineSegment
+                    End="234.5,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\pedidoDetalle\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\pedidoDetalle\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
