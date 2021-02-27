@@ -22,6 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio2", "Ejercicio2", "{3615D2A6-3FF0-4A9A-B95A-1725C04FA11D}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL2.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasETL2.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasGrupos_Fiorella.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\ConsultasGrupos_Fiorella.sql
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Fiorella_CreateBase.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Fiorella_CreateBase.sql
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanMiguel_j20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanMiguel_j20191007.csv
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanSalvador_i20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SanSalvador_i20191007.csv

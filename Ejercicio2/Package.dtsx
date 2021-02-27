@@ -11,8 +11,8 @@
   DTS:LocaleID="21514"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{1D6FDAFD-F5A9-457F-B510-5E916DCDA438}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{FF5AFB9E-9262-4588-A65C-B8CCB1AD35B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -192,7 +192,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFtTkLAoFO8Ungt8cADU5dOK+kENJClUeiJzPZV1QdqwAAAAAOgAAAAAIAACAAAAC0Gh9zE+V9Zg/2Wklj2PdBWuFdCfCZEHMe4h8gWjhuGyAAAAC1MpyZz8uuVsVFozZOa/gN+m8ry6GFyomY+sjvDOtE0kAAAACuM4KbBx+vBqXv+iCo6+rAIgFcqynf1luKtEV4009YIFPNPv/as9x1KxtAxtqSQkV57oy9ctJjbXykeF1fPmD1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA0ADMwi7fhVms3C37yCSFAKxB3v72X2jicQAdDB0Bf5gAAAAAOgAAAAAIAACAAAAC4ynLftto0YDSlpq4J0vL7JprGUuz5UtQZEefhgCCpYCAAAACjtg3siv2LMRYqenVYADe9eTB9Xst/jZzyJLd/rqyLS0AAAACcmTQZjE+t2d1RKRcv4D9jlkk4fE0yk19XYxidc3QhTBK8czSD1TeDf1zbj/AoWM9MqbbNj9OzBZnWwTNNQfph</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1241,16 +1241,12 @@
                           name="Rosas" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Claveles]"
-                          dataType="numeric"
-                          name="Claveles"
-                          precision="12"
-                          scale="2" />
+                          dataType="i4"
+                          name="Claveles" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Macetas]"
-                          dataType="numeric"
-                          name="Macetas"
-                          precision="10"
-                          scale="2" />
+                          dataType="i4"
+                          name="Macetas" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Tierra]"
                           dataType="i4"
@@ -2007,6 +2003,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="116,42"
+          Id="Package\Clientes"
+          TopLeft="327,418" />
+        <NodeLayout
           Size="168,42"
           Id="Package\Contenedor de bucles Foreach\Carga Documentos"
           TopLeft="56,10" />
@@ -2021,6 +2021,14 @@
           Size="144,42"
           Id="Package\Limpiar Datos"
           TopLeft="514,69" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\PedidoCliente"
+          TopLeft="597,424" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\pedidoDetalle"
+          TopLeft="614,510" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="586,111">
@@ -2055,10 +2063,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Clientes"
-          TopLeft="327,418" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
           TopLeft="382.75,331">
@@ -2081,10 +2085,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="143,42"
-          Id="Package\PedidoCliente"
-          TopLeft="597,424" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
           TopLeft="443,442">
@@ -2107,10 +2107,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="143,42"
-          Id="Package\pedidoDetalle"
-          TopLeft="614,510" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
           TopLeft="668.5,466">
@@ -2148,69 +2144,6 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source"
-          TopLeft="274,62" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination"
-          TopLeft="515,294" />
-        <EdgeLayout
-          Id="Package\Contenedor de bucles Foreach\Carga Documentos.Paths[Flat File Source Output]"
-          TopLeft="349.5,104">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="251,190"
-              Start="0,0"
-              End="251,182.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,91" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,91"
-                    Point2="0,95"
-                    Point3="4,95" />
-                  <mssgle:LineSegment
-                    End="247,95" />
-                  <mssgle:CubicBezierSegment
-                    Point1="247,95"
-                    Point2="251,95"
-                    Point3="251,99" />
-                  <mssgle:LineSegment
-                    End="251,182.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Clientes">
     <LayoutInfo>
@@ -2262,6 +2195,19 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Clientes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Clientes\OLE DB Source">
     <Properties>
       <Property>
@@ -2269,8 +2215,58 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination"
+          TopLeft="515,294" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos\Flat File Source"
+          TopLeft="274,62" />
+        <EdgeLayout
+          Id="Package\Contenedor de bucles Foreach\Carga Documentos.Paths[Flat File Source Output]"
+          TopLeft="349.5,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="251,190"
+              Start="0,0"
+              End="251,182.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91"
+                    Point2="0,95"
+                    Point3="4,95" />
+                  <mssgle:LineSegment
+                    End="247,95" />
+                  <mssgle:CubicBezierSegment
+                    Point1="247,95"
+                    Point2="251,95"
+                    Point3="251,99" />
+                  <mssgle:LineSegment
+                    End="251,182.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Clientes\OLE DB Destination">
+    design-time-name="Package\Contenedor de bucles Foreach\Carga Documentos\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2333,14 +2329,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\PedidoCliente\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\PedidoCliente\OLE DB Destination">
     <Properties>
       <Property>
@@ -2350,6 +2338,14 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PedidoCliente\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -2404,14 +2400,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\pedidoDetalle\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\pedidoDetalle\OLE DB Destination">
     <Properties>
       <Property>
@@ -2421,6 +2409,14 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\pedidoDetalle\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
