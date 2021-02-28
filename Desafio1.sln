@@ -29,6 +29,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio2", "Ejercicio2", 
 		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SantaAna_c20191007.csv = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\Fiorella\SantaAna_c20191007.csv
 	EndProjectSection
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Ejercicio3", "Ejercicio3\Ejercicio3.dtproj", "{B939BCE9-D993-450F-980E-821FECA45E1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicio3", "Ejercicio3", "{C1588C0C-1871-461F-B7D6-BF3153EF91ED}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\..\..\..\Desktop\ResultadoEjercicio3\Cliente1.xls = ..\..\..\..\..\..\..\..\..\Desktop\ResultadoEjercicio3\Cliente1.xls
+		..\..\..\..\..\..\..\..\..\Desktop\ResultadoEjercicio3\Cliente2.xls = ..\..\..\..\..\..\..\..\..\Desktop\ResultadoEjercicio3\Cliente2.xls
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\FioDio\db_honduras.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\FioDio\db_honduras.sql
+		..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\FioDio\Mysql_db_roaming_costarica.sql = ..\..\..\..\..\DMD\Unidad 2\Desafio1\Recursos\FioDio\Mysql_db_roaming_costarica.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -38,6 +48,8 @@ Global
 		{6D11C3FD-2D52-4569-81BC-73CB78FD59B7}.Development|Default.Build.0 = Development
 		{71323842-3FE3-4FB4-A3F1-B7807AD96981}.Development|Default.ActiveCfg = Development
 		{71323842-3FE3-4FB4-A3F1-B7807AD96981}.Development|Default.Build.0 = Development
+		{B939BCE9-D993-450F-980E-821FECA45E1D}.Development|Default.ActiveCfg = Development
+		{B939BCE9-D993-450F-980E-821FECA45E1D}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +57,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{433B0462-DC15-4EF0-98D5-83B29A15F05E} = {71322CEB-5436-44F5-8C46-DFDE797669CC}
 		{3615D2A6-3FF0-4A9A-B95A-1725C04FA11D} = {71322CEB-5436-44F5-8C46-DFDE797669CC}
+		{C1588C0C-1871-461F-B7D6-BF3153EF91ED} = {71322CEB-5436-44F5-8C46-DFDE797669CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBC4F366-8B5B-4320-8C10-C09D99251EEF}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.db_roaming_costarica.root"
+  DTS:DTSID="{C861A779-D5C6-470A-A53D-58A78FFCF2DA}"
+  DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="server=localhost;user id=root;persistsecurityinfo=True;database=db_roaming_costarica;">
+      <DTS:Password
+        DTS:Name="password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAACAAAAAAAQZgAAAAEAACAAAAA6EmpIiNbJ32vOdLN8B6WAxPm/QVh1cLGQbxWeDEaHWwAAAAAOgAAAAAIAACAAAACepygHQQACmi3dFR06rpOX37rxwYG8iI0FeBRNnPqT2IAAAAAbh+T4WFIy4G18UvNQk0iExhYlJfHubYLKLijK+ehDlH4R77c9NIin6DAj2UsetfLKXQryBVTx0mDfGZjRrvy5MGOzk60Y4AeaSG0Ynk+QXMwIyYlbn5Amssw8hHPrbi3LOYMWYc3cQRbO5BCIUGOFW9A8yrw/K7tyA6+/xEmM6UAAAADPxnrh3IZzW8boaYOs/+NwXtFOr6aisKn4tM5NgR5c4QBnJG/c9Np+1XmYqN9ZDFKYLn41Ix7Np7lMZBkfldg4</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
