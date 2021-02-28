@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DMDUDB.db_roaming_honduras.AdministradorDBA1"
+  DTS:DTSID="{BB30900E-5BA8-4A9F-88D7-CAE221ECA954}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DMDUDB;User ID=AdministradorDBA;Initial Catalog=db_roaming_honduras;Persist Security Info=True;Application Name=SSIS-Ejercicio3-{BB30900E-5BA8-4A9F-88D7-CAE221ECA954}DMDUDB.db_roaming_honduras.AdministradorDBA1;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIryzOkgE7kyShCKeiUnP5wAAAAACAAAAAAAQZgAAAAEAACAAAAAB/6yyAhRwwz6fAWiblAnpdo9CZ1EMI6+kU10FQ2R3SQAAAAAOgAAAAAIAACAAAABpIPxLyx4x6bw3J4BvoNYX9yOX9df5Svjzg/Uqg9EaPYAAAAAsUw9/wN8dqe1cvPSuYp/txVgPbvKQefWkjYe/5A97/Gp8ew6mBHAC1cbYuyMpCb3AN5kgVfD1huongrFAlxMVkNfoJzWVWma97tjcRxHiD4IaxZqWeX32h2VVc5U1+/C5TuSVaa0V8tcaeVlEuamhEERo5EoG3rcmJlIcJPLxw0AAAAA7DN4arZbJulw+BHXXFe77S8EPno4kIiVS8GiR7iwOJT+QXsZ2YgRYrBDybxlH2OMUj4iq0VUDzLY5/UIiWQdI</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
